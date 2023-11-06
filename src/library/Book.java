@@ -71,6 +71,7 @@ public class Book {
                 '}';
     }
 
+    // method equals and hashCode
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

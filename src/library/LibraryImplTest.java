@@ -49,7 +49,7 @@ class LibraryImplTest {
     }
 
     @Test
-    void removeBook() {
+    void removeBookTest() {
         library.printBook();
         assertEquals(book[1], library.removeBook(101l));
         assertEquals(3, library.quantity());
@@ -67,7 +67,7 @@ class LibraryImplTest {
     }
 
     @Test
-    void findBook() {
+    void findBookTest() {
         library.printBook();
         assertEquals(book[1], library.findBook(101l));
         assertEquals(book[3], library.findBook(103l));
@@ -75,18 +75,18 @@ class LibraryImplTest {
     }
 
     @Test
-    void quantity() {
+    void quantityTest() {
         library.printBook();
         assertEquals(4, library.quantity());
     }
 
     @Test
-    void printBook() {
+    void printBookTest() {
         library.printBook();
     }
 
     @Test
-    void findBookByAuthor() {
+    void findBookByAuthorTest() {
         library.printBook();
         Book[] actual = library.findBookByAuthor("Agata Cristi");
         Book[] expected = {book[0], book[1]};
