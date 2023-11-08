@@ -40,7 +40,7 @@ public class LibraryImpl implements Library {
                 books[i] = books[size - 1];
                 books[size - 1] = null;
                 size--;
-                return removeBook git;
+                return removeBook;
             }
         }
         return null;
